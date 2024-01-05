@@ -1,0 +1,8 @@
+game.Players.PlayerAdded:Connect(function(player)
+    local premiumGamePassId = 1234567 -- Replace with your actual premium game pass ID
+
+    if game:GetService("GamePassService"):PlayerHasPass(player, premiumGamePassId) then
+        -- Give premium player special abilities or perks here
+        -- Example: player.Character.Humanoid.WalkSpeed = 50
+    end
+end)
